@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="style.css" />
+    <title>Splunk Evidence</title>
+  </head>
+  <body>
+    <div class="header">
+      <h1>evidence URL builder <span style="color: #5cc05c">splunk</span></h1>
+    </div>
+
+    <div class="container principal">
+      <div class="container index">
+        <label for="phone">index</label>
+        <input id="index" class="" type="text" name="index" placeholder="ex: checkout-ui" />
+      </div>
+      <div class="container evidence">
+        <label for="phone">evidence hash</label>
+        <input id="evidence" type="text" name="evidence" placeholder="ex: 4c08a0a8b7baa3f327c77efaa84f6caf" />
+      </div>
+
+      <a id="makeUrl" class="btn" href="#"> create URL </a>
+      <div class="container url">
+        <b>evidence link:</b> <span id="url-pronta" style="font-size: 0.9rem; color: #5cc05c"></span><span id="copy-tooltip">link copiado!</span>
+      </div>
+
+      <a class="btn" target="_blank" id="newTab" href="">open in new tab</a>
+      <div class="container sugestoes">
+        <h3><b>observations:</b></h3>
+        <ul>
+          <li>Not every <i>hash evidence</i> actually generates accessible evidence.</li>
+          <li>
+            After opening the URL and performing the VTEX login, wait a few minutes and open the URL again to avoid the <i>Monitoring</i> screen.
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <script src="/script.js"></script>
+  </body>
+</html>

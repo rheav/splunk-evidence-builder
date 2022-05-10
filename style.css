@@ -1,0 +1,226 @@
+/* ------------------- */
+/* Reset               */
+/* ------------------- */
+
+/* https://piccalil.li/blog/a-modern-css-reset/ */
+
+/* Box sizing */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Reset margins */
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+figure,
+picture {
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  font-weight: 400;
+}
+
+/* set up the body */
+body {
+  font-family: var(--ff-sans-normal);
+  font-size: var(--fs-400);
+  color: hsl(var(--clr-white));
+  background-color: hsl(var(--clr-dark));
+  line-height: 1.5;
+  min-height: 100vh;
+
+  display: grid;
+  grid-template-rows: min-content 1fr;
+}
+
+/* make images easier to work with */
+img,
+picutre {
+  max-width: 100%;
+  display: block;
+}
+
+/* make form elements easier to work with */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* remove animations for people who've turned them off 
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}*/
+
+/* ----------------------------------------------------*/
+/* MY STYLES */
+/* ----------------------------------------------------*/
+
+body {
+  background-color: #f7f8fa;
+  font-family: -apple-system, system-ui, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+  min-width: 500px;
+}
+
+input,
+label {
+  display: block;
+}
+
+input {
+  border: 1px solid rgba(27, 31, 35, 0.15);
+  border-radius: 6px;
+}
+input:focus {
+  outline: none !important;
+  border: 1px solid #5cc05c;
+  box-shadow: rgba(27, 31, 35, 0.04) 0 1px 0, rgba(255, 255, 255, 0.25) 0 1px 0 inset;
+}
+
+label {
+  margin-block-end: 0.3rem;
+  font-weight: bold;
+}
+
+::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #bababa;
+  opacity: 1; /* Firefox */
+}
+
+a,
+link {
+  text-decoration: none;
+}
+
+.flex {
+  display: flex;
+}
+
+.btn {
+  appearance: none;
+  background-color: #fafbfc;
+  border: 1px solid rgba(27, 31, 35, 0.15);
+  border-radius: 6px;
+  box-shadow: rgba(27, 31, 35, 0.04) 0 1px 0, rgba(255, 255, 255, 0.25) 0 1px 0 inset;
+  box-sizing: border-box;
+  color: #24292e;
+  cursor: pointer;
+  display: inline-block;
+  font-family: -apple-system, system-ui, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  list-style: none;
+  padding: 6px 16px;
+  transition: background-color 0.2s cubic-bezier(0.3, 0, 0.5, 1);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: middle;
+  white-space: nowrap;
+  word-wrap: break-word;
+  width: 200px;
+  max-width: 200px;
+  text-align: center;
+}
+
+.btn:hover {
+  background-color: #f3f4f6;
+  transition-duration: 0.1s;
+}
+
+.btn:disabled {
+  background-color: #fafbfc;
+  border-color: rgba(27, 31, 35, 0.15);
+  color: #959da5;
+  cursor: default;
+}
+
+.btn:active {
+  background-color: #edeff2;
+  box-shadow: rgba(225, 228, 232, 0.2) 0 1px 0 inset;
+  transition: none 0s;
+}
+
+.btn:focus {
+  outline: 1px transparent;
+}
+
+.btn:before {
+  display: none;
+}
+
+.btn:-webkit-details-marker {
+  display: none;
+}
+
+#makeUrl {
+}
+
+#newTab {
+  visibility: hidden;
+}
+
+.header {
+  background-color: #3c444d;
+  color: #fff;
+  padding: 0.5rem 2rem 0.8rem;
+}
+
+.principal {
+  max-height: 300px;
+  padding: 1rem 2rem;
+}
+
+.index {
+  margin-block-end: 0.7rem;
+}
+
+.evidence {
+  margin-block-end: 2rem;
+}
+
+.url {
+  margin: 1rem auto;
+}
+
+.sugestoes {
+  margin-top: 1rem;
+  font-size: 0.85rem;
+  padding-bottom: 1rem;
+}
+
+#copy-tooltip {
+  font-size: 0.9rem;
+  background-color: #3c444d;
+  color: #fff;
+  padding: 0.2em 0.7em;
+  border-radius: 6px;
+  border: 3px solid #5cc05c;
+  margin-left: 0.5rem;
+  opacity: 0;
+  transition: opacity 0.2s ease-in-out;
+}
